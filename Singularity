@@ -18,6 +18,14 @@ IncludeCmd: yes
     wget https://github.com/browsh-org/browsh/releases/download/v1.6.4/browsh_1.6.4_linux_amd64.deb
     apt-get install -y ./browsh_1.6.4_linux_amd64.deb
     rm ./browsh_1.6.4_linux_amd64.deb
+    apt-get install -y lynx
+    
+    if [ ! -d /images ]; then mkdir /images; fi
+    if [ ! -d /projects ]; then mkdir /projects; fi
+    if [ ! -d /containers ]; then mkdir /containers; fi
+    if [ ! -d /share ]; then mkdir /share; fi
+    if [ ! -d /scratch ]; then mkdir /scratch; fi
+    if [ ! -d /webservers/pfenningweb ]; then mkdir -p /webservers/pfenningweb; fi
 
 ####################################################################################
 %apphelp browsh
