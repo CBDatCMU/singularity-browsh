@@ -33,3 +33,9 @@ IncludeCmd: yes
 
 %apprun browsh
     browsh "$@"
+
+%apphelp lynx
+    lynx --help    
+
+%apprun lynx
+    lynx "$@"
